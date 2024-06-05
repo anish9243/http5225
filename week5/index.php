@@ -34,7 +34,7 @@
                 <div class="card">
                     <div class="card-body">
                     <h5 class="card-title">' . $row["Name"] . '</h5>
-                    <div style="width: 100%; height: 50px; background-color: ' . $row["Hex"] . '" class="mb-2"></div>
+                    <div style="width: 100%; height: 50px; background-color: ' . $row["Hex"] . '" class="mb-1"></div>
                     <p class="card-text">Hex: ' . $row["Hex"] . '</p>
                     </div>
                 </div>
