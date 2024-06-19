@@ -1,4 +1,6 @@
 <?php
+
+    include('functions.php');
     if (isset($_POST['addSchool'])) {
         // print_r($_POST);
         $schoolName = $_POST['schoolName'];
@@ -13,6 +15,7 @@
         $school = mysqli_query($connect, $query);
 
         if ($school) {
+            set_message('School was added sucessfully!', 'success');
             header("Location: ../index.php");
         } else {
             echo "Failed: " . mysqli_error($connect);
