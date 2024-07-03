@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <!-- Brand Logo and Name -->
         <a class="navbar-brand" href="index.php">
-            Top Clubs
+            Top Night Clubs
         </a>
         <!-- Toggler button for collapsing navbar content on small screens -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
