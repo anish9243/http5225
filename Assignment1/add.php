@@ -41,6 +41,10 @@
                         <label for="Website" class="form-label">Website</label>
                         <input type="text" class="form-control" id="Website" name="Website">
                     </div>
+                    <div class="mb-3">
+                        <label for="text" class="form-label">Description</label>
+                        <textarea class="form-control" id="text" name="text" rows="3"></textarea>
+                    </div>
                     <button type="submit" class="btn btn-primary" name="addClub">Add Club</button>
                     <a href="index.php" class="btn btn-secondary">Back</a>
                 </form>
