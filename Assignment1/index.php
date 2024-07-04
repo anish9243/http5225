@@ -40,10 +40,10 @@
                     echo '<div class="col-md-4 mt-2 mb-2">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="card-title">' . $club['Club_Name'] . '</h5>
+                                    <h5 class="card-title"><a href="details.php?id=' . $club['Rank'] . '">' . $club['Club_Name'] . '</a></h5>
                                     <p class="card-text">' . $club['location'] . '</p>
                                     <span class="badge bg-secondary">' . $club['capacity'] . '</span>
-                                    <a class="badge bg-info" target="_blank">' . $club['Website'] . '</a>
+                                    <a href="http://' . $club['Website'] . '" class="badge bg-info" target="_blank">' . $club['Website'] . '</a>
                                 </div>
                                 <div class="card-footer">
                                     <div class="row">

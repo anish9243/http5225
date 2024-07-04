@@ -16,7 +16,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col">
-                <h1 class="display-4 mb-4">All Schools</h1>
+                <h1 class="display-4 mb-4">Add New Club</h1>
             </div>
         </div>
     </div>
@@ -39,13 +39,10 @@
                     </div>
                     <div class="mb-3">
                         <label for="Website" class="form-label">Website</label>
-                        <input type="url" class="form-control" id="Website" name="Website">
-                    </div>
-                    <div class="mb-3">
-                        <label for="text" class="form-label">Description</label>
-                        <textarea class="form-control" id="text" name="text" rows="3"></textarea>
+                        <input type="text" class="form-control" id="Website" name="Website">
                     </div>
                     <button type="submit" class="btn btn-primary" name="addClub">Add Club</button>
+                    <a href="index.php" class="btn btn-secondary">Back</a>
                 </form>
             </div>
         </div>

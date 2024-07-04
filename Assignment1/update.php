@@ -50,6 +50,7 @@ $result = $club->fetch_assoc();
                             <input type="text" class="form-control" id="website" name="website" value="<?php echo $result['Website'] ?>">
                         </div>
                         <button type="submit" class="btn btn-primary" name="updateClub">Update</button>
+                        <a href="index.php" class="btn btn-secondary">Back</a>
                     </form>
                 </div>
             </div>
