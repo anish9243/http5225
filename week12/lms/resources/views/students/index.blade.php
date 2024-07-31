@@ -1,15 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LMS</title>
-</head>
-<body>
-    <h1>All Students</h1>
+@extends('layouts/admin')
+@section('content')
+
+<div class="row">
+    <div class="col">
+        <h1 class="display-2">
+            View all students
+        </h1>
+    </div>
+</div>
+<div class="row">
     @foreach ($students as $student)
-        {{ $student -> fname }} {{ $student -> lname }}
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        {{ $student -> fname}} {{ $student -> lname }}
+                    </h5>
+                    <a href="{{ route('students.edit', $student -> id ) }}" class="card-link">Edit</a>
+                    <a href="{{ route('students.trash', $student -> id) }}" class="card-link">Delete</a>
+                </div>
+
+            </div>
+        </div>
     @endforeach
-</body>
-</html>
+</div>
+@endsection
